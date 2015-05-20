@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sample Test" verbose="1" parallel="tests" thread-count="3"> 
+  	<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  	<test name="Results On Google Search Page" preserve-order="true">
+		<classes>
+			<class name="com.generic.validateorders.WebAppTest">
+			</class>
+		</classes>
+	</test> 
+</suite>
